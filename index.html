@@ -9,7 +9,7 @@
 </head>
 <body>
      <header>
-        <!-- Responsive Bootstrap navigation, sits on top of the hero -->
+        <!-- Bootstrap navigation, sits on top of the hero -->
         <nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="index.html">YAAD</a>
@@ -19,6 +19,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainNav">
+                    <!-- Navigation links -->
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
@@ -42,7 +43,92 @@
         </div>
     </header>
     <main>
+        <!-- Section with p tags describing the site -->
+         <section class="py-5">
+            <div class="container">
+                        <h2 class="section-title">Catch the vibe that comes alive in Jamaica!</h2>
+                        <p>Whether you're seeking adventure, great food, vibrant culture or breathtaking
+                           natural wonders, Jamaica has something for everyone. Browse our guide and start
+                           planning your next experience.</p>
+            </div>
+        </section>
+        
+         <section class="pb-5">
+            <div class="container">
+                <div class="pictiure tile container">
+                    <article class="picture tile">
+                        <a href="activities.html" class="tile" style="background-image:url('images/things-to-do.jpg')">
+                            <span class="tile-title">Things to Do</span>
+                        </a>
+                    </article>
+                    <article class="picture tile">
+                        <a href="eats.html" class="tile" style="background-image:url('images/food.jpg')">
+                            <span class="tile-title">Food &amp; Drink</span>
+                        </a>
+                    </article>
+                    <article class="picture tile">
+                        <a href="activities.html" class="tile" style="background-image:url('images/culture.jpg')">
+                            <span class="tile-title">Our People &amp; Culture</span>
+                        </a>
+                    </article>
+                    <article class="picture tile">
+                        <a href="activities.html" class="tile" style="background-image:url('images/beaches.jpg')">
+                            <span class="tile-title">Beaches</span>
+                        </a>
+                    </article>
+                    <article class="picture tile">
+                        <a href="activities.html" class="tile" style="background-image:url('images/waterfalls.jpg')">
+                            <span class="tile-title">Waterfalls &amp; Rivers</span>
+                        </a>
+                    </article>
+                    <article class="picture tile">
+                        <a href="book.html" class="tile" style="background-image:url('images/events.jpg')">
+                            <span class="tile-title">Events</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+          <!-- Events carousel (Bootstrap JS component #2) -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Save the Date</h2>
+                <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded overflow-hidden">
+                        <div class="carousel-item active">
+                            <div class="event-slide" style="background-image:url('images/event1.jpg')"></div>
+                            <div class="carousel-caption">
+                                <h3>Treasure Beach Food, Rum &amp; Reggae Festival</h3>
+                                <p>Nov 06 &middot; South Coast, St. Elizabeth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="event-slide" style="background-image:url('images/event2.jpg')"></div>
+                            <div class="carousel-caption">
+                                <h3>Craft with a Difference</h3>
+                                <p>Nov 28 &middot; Devon House, Kingston</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="event-slide" style="background-image:url('images/event3.jpg')"></div>
+                            <div class="carousel-caption">
+                                <h3>Carnival in Jamaica</h3>
+                                <p>Mar 31 &middot; Various locations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         
