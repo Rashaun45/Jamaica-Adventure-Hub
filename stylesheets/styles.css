@@ -1,0 +1,83 @@
+/* -- Global color variables (Jamaican colours to be reused alot) -- */
+:root {
+    --jm-green: #009b3a;
+    --jm-green-dark: #007a2e;
+    --jm-gold: #fed100;
+    --jm-black: #111111;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    color: #333;
+}
+
+/* Navigation bar styles */
+.site-nav {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+    padding: 1rem 0;
+}
+
+.site-nav .nav-link {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0.5rem;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+    color: var(--jm-gold);
+}
+@media (max-width: 991.98px) {
+    .site-nav { background: rgba(0, 0, 0, 0.85); }
+}
+
+/* Hero section styles */
+.hero {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)),
+        url('../images/banner_background.jpg');
+    background-color: var(--jm-green-dark);   /* fallback if image is missing */
+    background-size: cover;
+    background-position: center;
+}
+.banner-text1, .banner-text2, .banner-text3 {
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+}
+.banner-text1 { font-size: clamp(2.5rem, 8vw, 6rem); }
+.banner-text2 { font-size: clamp(2.5rem, 8vw, 6rem); color: var(--jm-gold); }
+.banner-text3 { font-size: clamp(2.5rem, 8vw, 6rem); }
+
+/*  Buttons  */
+.btn-gold {
+    background-color: var(--jm-gold);
+    border-color: var(--jm-gold);
+    color: var(--jm-black);
+    font-weight: 700;
+    border-radius: 50rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.btn-gold:hover {
+    background-color: #e7c718;
+    border-color: #e7c718;
+    color: var(--jm-black);
+}
+.btn-green {
+    background-color: var(--jm-green);
+    border-color: var(--jm-green);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50rem;
+}
+.btn-green:hover {
+    background-color: var(--jm-green-dark);
+    border-color: var(--jm-green-dark);
+    color: #fff;
+}
