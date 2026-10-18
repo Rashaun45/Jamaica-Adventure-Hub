@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eats</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Eats | Yaad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
-       <header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="index.html">YAAD</a>
@@ -33,13 +33,81 @@
             </div>
         </div>
     </header>
+
     <main>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Where to Eat</h2>
+                <div id="eats-filters" class="d-flex flex-wrap justify-content-center gap-2 mb-4" role="group" aria-label="Filter eats by category"></div>
+                <div class="row g-4" id="eats-list"><!-- cards rendered by app.js --></div>
+            </div>
+        </section>
 
-        
-
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Iconic Jamaican Dishes</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Accordion (Bootstrap JS component) -->
+                        <div class="accordion" id="dishAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dish1" aria-expanded="true" aria-controls="dish1">Ackee and Saltfish</button>
+                                </h3>
+                                <div id="dish1" class="accordion-collapse collapse show" data-bs-parent="#dishAccordion">
+                                    <div class="accordion-body">Jamaica's national dish: soft, buttery ackee sautéed with salted cod, onion, peppers and thyme, often served with fried dumplings or boiled banana.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dish2" aria-expanded="false" aria-controls="dish2">Jerk Chicken and Pork</button>
+                                </h3>
+                                <div id="dish2" class="accordion-collapse collapse" data-bs-parent="#dishAccordion">
+                                    <div class="accordion-body">Meat marinated in pimento (allspice), scotch bonnet pepper and spices, then slow-cooked over pimento wood for a smoky, fiery flavour.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dish3" aria-expanded="false" aria-controls="dish3">Escovitch Fish</button>
+                                </h3>
+                                <div id="dish3" class="accordion-collapse collapse" data-bs-parent="#dishAccordion">
+                                    <div class="accordion-body">Fried fish topped with a tangy pickle of vinegar, onions, carrots and peppers. Best paired with bammy or festival.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dish4" aria-expanded="false" aria-controls="dish4">Blue Mountain Coffee</button>
+                                </h3>
+                                <div id="dish4" class="accordion-collapse collapse" data-bs-parent="#dishAccordion">
+                                    <div class="accordion-body">Grown high in the Blue Mountains, this smooth, mild coffee is among the most celebrated in the world.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        
-    </footer> 
+
+    <footer class="site-footer text-white py-4">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-4 fw-bold fs-4">YAAD</div>
+                <div class="col-md-4">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="index.html">Home</a></li>
+                        <li class="list-inline-item"><a href="activities.html">Activities</a></li>
+                        <li class="list-inline-item"><a href="eats.html">Eats</a></li>
+                        <li class="list-inline-item"><a href="book.html">Book</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end small">&copy; 2026 Jamaica Adventure Hub</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
